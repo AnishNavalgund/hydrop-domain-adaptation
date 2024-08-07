@@ -1,0 +1,13 @@
+# General
+.venv/
+res/
+out/
+logs/
+.env
+annotations/
+tf_datasets/
+# MacOS
+.DS_Store
+
+# mlflow artifacts
+mlruns/

@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "keras-playground"
+version = "0.1.0"
+description = ""
+authors = ["Goriatch <Moritz.Emberger@hydrop-systems.com>"]
+readme = "README.md"
+packages = [{include = "keras_playground"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+tensorflow = { version = "2.12.0", markers = "sys_platform != 'darwin'" }
+tensorflow-macos = { version = "2.12.0", markers = "sys_platform == 'darwin'" }
+tensorflow-metal = { version = "^1.0.1", markers = "sys_platform == 'darwin'" }
+tensorflow-model-optimization = "^0.7.5"
+tensorflow-hub = "^0.14.0"
+keras-cv = "0.6.1"
+keras-core = "0.1.4"
+numpy = "1.23.5"
+Pillow = "^10.0.0"
+matplotlib = "^3.7.2"
+ipykernel = "^6.25.0"
+ipywidgets = "^8.0.7"
+opencv-python = "^4.8.0.74"
+pycocotools = "^2.0.6"
+python-dotenv = "1.0.1"
+mlflow = "2.13.0"
+tensorflow-addons = "0.23.0"
+keras-utils = "1.0.13"
+imageio = "2.34.2"
+scikit-image = "0.24.0"
+
+hydrop-sharepointsync = {git = "https://github.com/hydrop-water-systems/hydrop_SharePoint_Sync.git"}
+array-record = "0.4.1"
+pyyaml = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
